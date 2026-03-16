@@ -17,17 +17,17 @@ const fakeResult: SearchResult[] = [
 	{
 		url: url("/"),
 		meta: {
-			title: "This Is a Fake Search Result",
+			title: "这是一条模拟搜索结果",
 		},
 		excerpt:
-			"Because the search cannot work in the <mark>dev</mark> environment.",
+			"因为搜索功能在开发环境下无法正常工作。",
 	},
 	{
 		url: url("/"),
 		meta: {
-			title: "If You Want to Test the Search",
+			title: "如果你想测试搜索功能",
 		},
-		excerpt: "Try running <mark>npm build && npm preview</mark> instead.",
+		excerpt: "可以尝试运行 <mark>npm build && npm preview</mark> 命令来替代。",
 	},
 ];
 
