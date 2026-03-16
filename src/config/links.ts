@@ -11,6 +11,12 @@ export interface FriendLink {
 
 export const friendLinks: FriendLink[] = [
   {
+    name: "星轨时光机",
+    url: "https://gerrit1999.github.io",
+    description: "Gerrit1999 的个人博客",
+    avatar: "https://avatars.githubusercontent.com/u/71630591",
+  },
+  {
     name: "ZY 知识库",
     url: "https://blog.pljzy.top",
     description: "一个技术探索与分享的平台",
