@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  # 每次推送到 `main` 分支时触发部署，若使用其他分支请修改此处
+  push:
+    branches: [ main ]
+  # 允许在 GitHub Actions 标签页手动触发部署
+  workflow_dispatch:
+
+# 配置权限，允许克隆仓库和部署页面
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v5
+      - name: Install, build, and upload your site
+        uses: withastro/action@v5
+        # 可选配置（取消注释以使用）：
+        # with:
+          # path: . # Astro 项目在仓库中的根路径（可选）
+          # node-version: 20 # 指定 Node.js 版本，默认 20（可选）
+          # package-manager: pnpm@latest # 指定包管理器，会自动检测 lockfile（可选）
+          # build-cmd: pnpm run build # 自定义构建命令（可选）
+        # env:
+          # PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # 添加公共环境变量（可选）
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
