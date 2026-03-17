@@ -41,12 +41,12 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		LinkPreset.About,
 		{
 			name: "友链",
 			url: "/links/", // 友链页面路径
 			external: false,
 		},
+		LinkPreset.About,
 		{
 			name: "开往",
 			url: "https://www.travellings.cn/go.html", // Internal links should not include the base path, as it is automatically added
