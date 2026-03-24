@@ -65,7 +65,7 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:bluesky", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://bsky.app/profile/xugengbin.bsky.social",
+			url: "https://bsky.app/profile/xugengbin.com",
 		},
 		{
 			name: "Steam",
