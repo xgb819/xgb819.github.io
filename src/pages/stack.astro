@@ -1,0 +1,42 @@
+---
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
+import EquipmentCard from "@components/misc/EquipmentCard.astro";
+import { equipment } from "../config/equipment";
+---
+
+<MainGridLayout title={i18n(I18nKey.stack)} description={i18n(I18nKey.stack)}>
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <div class="flex items-center gap-3 mb-6">
+                <Icon name="material-symbols:devices-rounded" class="text-3xl text-[var(--primary)]" />
+                <h2 class="text-2xl font-bold text-[var(--primary)]">工具栈</h2>
+            </div>
+            {equipment.map((category) => (
+                <div class="mb-8">
+                    <div class="prose dark:prose-invert prose-base !max-w-none custom-md">
+                        <h2 class="!mt-0 mb-2">
+                            {category.category}
+                        </h2>
+
+                        <p class="mb-6 opacity-75">
+                            {category.description}
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {category.items.map((item) => (
+                            <EquipmentCard
+                                image={item.image}
+                                name={item.name}
+                                specification={item.specification}
+                                url={item.url}
+                            />
+                        ))}
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</MainGridLayout>

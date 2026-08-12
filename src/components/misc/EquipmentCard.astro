@@ -1,0 +1,46 @@
+---
+const { image, name, specification, url } = Astro.props;
+
+const cardClass =
+    "group block overflow-hidden rounded-lg bg-[var(--btn-plain-bg-hover)] hover:bg-[var(--btn-card-bg-hover)] transition-all duration-200";
+---
+
+{url ? (
+    <a
+        href={url}
+        target="_blank"
+        class={`${cardClass} !no-underline !border-none hover:!no-underline hover:!border-none`}
+    >
+        <div class="p-5">
+            <img 
+                src={image}
+                class="!mx-0 !mt-2 !mb-6 w-full aspect-video object-cover pointer-events-none"
+            />
+
+            <h3 class="!mt-0 !mb-1 font-bold text-base text-90 group-hover:text-[var(--primary)] transition-colors">
+                {name}
+            </h3>
+
+            <div class="text-sm text-neutral-600 dark:text-neutral-400 truncate">
+                {specification}
+            </div>
+        </div>
+    </a>
+) : (
+    <div class={cardClass}>
+        <div class="p-5">
+            <img 
+                src={image}
+                class="!mx-0 !mt-2 !mb-6 w-full aspect-video object-cover pointer-events-none"
+            />
+
+            <h3 class="!mt-0 !mb-1 font-bold text-base text-90 group-hover:text-[var(--primary)] transition-colors">
+                {name}
+            </h3>
+
+            <div class="text-sm text-neutral-600 dark:text-neutral-400 truncate">
+                {specification}
+            </div>
+        </div>
+    </div>
+)}

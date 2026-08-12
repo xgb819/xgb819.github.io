@@ -38,21 +38,36 @@ export const siteConfig: SiteConfig = {
 };
 
 export const navBarConfig: NavBarConfig = {
-	links: [
-		LinkPreset.Home,
-		LinkPreset.Archive,
-		{
-			name: "友链",
-			url: "/links/", // 友链页面路径
-			external: false,
-		},
-		LinkPreset.About,
-		{
-			name: "开往",
-			url: "https://www.travellings.cn/go.html", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-	],
+    links: [
+        LinkPreset.Home,
+        LinkPreset.Archive,
+        {
+            name: "友链",
+            url: "/links/",
+            external: false,
+        },
+        {
+            name: "关于",
+            url: "",
+            children: [
+                {
+                    name: "工具栈",
+                    url: "/stack/",
+                    external: false,
+                },
+                {
+                    name: "关于我",
+                    url: "/about/",
+                    external: false,
+                },
+            ],
+        },
+        {
+            name: "开往",
+            url: "https://www.travellings.cn/go.html",
+            external: true,
+        },
+    ],
 };
 
 export const profileConfig: ProfileConfig = {
