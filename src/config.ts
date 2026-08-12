@@ -61,11 +61,16 @@ export const profileConfig: ProfileConfig = {
 	bio: "",
 	links: [
 		{
-			name: "Bluesky",
-			icon: "fa6-brands:bluesky", // Visit https://icones.js.org/ for icon codes
+			name: "GitHub",
+			icon: "fa6-brands:github", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://bsky.app/profile/xugengbin.com",
+			url: "https://github.com/xgb819",
+		},
+		{
+			name: "QQ",
+			icon: "fa6-brands:qq",
+			url: "https://qm.qq.com/q/wzauDZlIlO",
 		},
 		{
 			name: "Steam",
@@ -73,9 +78,9 @@ export const profileConfig: ProfileConfig = {
 			url: "https://steamcommunity.com/id/xgb819",
 		},
 		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/xgb819",
+			name: "邮箱",
+			icon: "fa6-solid:envelope",
+			url: "mailto:xgb819@gmail.com",
 		},
 	],
 };
