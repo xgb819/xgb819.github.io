@@ -2,7 +2,7 @@
 const { image, name, specification, url } = Astro.props;
 
 const cardClass =
-    "group block overflow-hidden rounded-lg bg-[var(--btn-plain-bg-hover)] hover:bg-[var(--btn-card-bg-hover)] transition-all duration-200";
+    "group block overflow-hidden rounded-lg bg-[var(--btn-plain-bg-hover)] hover:bg-[var(--btn-card-bg-hover)] active:bg-[var(--btn-card-bg-active)] transition-all duration-200";
 ---
 
 {url ? (

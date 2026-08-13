@@ -73,7 +73,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/gengar_icon_by_chibilyra_d9ilmcm.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "许耿彬",
-	bio: "",
+	bio: "记录折腾，也收藏生活。",
 	links: [
 		{
 			name: "GitHub",
