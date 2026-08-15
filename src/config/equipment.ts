@@ -10,18 +10,6 @@ export const equipment = [
                 url: "https://www.acer.com.cn/product_list.html?parentid=336"
             },
             {
-                name: "创维 X24PF18 电竞显示器",
-                specification: "23.8 英寸 / 200Hz",
-                image: "/images/equipment/skyworth-x24pf18.png",
-                url: ""
-            },
-            {
-                name: "雷蛇 × 宝可梦外设全家桶",
-                specification: "耿鬼款",
-                image: "/images/equipment/razer-pokemon-gengar.png",
-                url: "https://cn.razerzone.com/collabs/pokemon-gengar"
-            },
-            {
                 name: "真我 Neo 8",
                 specification: "赛博紫 / 16+512GB",
                 image: "/images/equipment/realme-neo-8.png",
