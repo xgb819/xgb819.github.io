@@ -1,10 +1,15 @@
 export const aboutConfig = {
 	intro: {
-		eyebrow: "你好，很高兴认识你 👋",
+		eyebrow: "Ciallo～(∠・ω< )⌒★",
 		name: "许耿彬",
 		roles: ["数码科技爱好者", "独立博客作者", "INTP-A"],
 		description:
 			"喜欢研究电脑、软件与网络，也喜欢把一个问题追到能说清楚为止。这里记录折腾过程，也收藏生活里值得记住的片段。",
+	},
+	avatarCredit: {
+		text: "ChibiLyra",
+		label: "Gengar Icon by ChibiLyra（2015）",
+		url: "https://www.deviantart.com/chibilyra/art/Gengar-Icon-575437414",
 	},
 	mbti: {
 		type: "INTP-A",
@@ -32,18 +37,14 @@ export const aboutConfig = {
 		{ name: "Tailwind", icon: "simple-icons:tailwindcss", background: "#06b6d4", foreground: "#ffffff" },
 		{ name: "Windows", icon: "fa6-brands:windows", background: "#0078d4", foreground: "#ffffff" },
 	],
-	skills: [
-		{ name: "Astro", icon: "simple-icons:astro" },
-		{ name: "ChatGPT", icon: "simple-icons:openai" },
-		{ name: "Git", icon: "simple-icons:git" },
-		{ name: "GitHub", icon: "fa6-brands:github" },
-		{ name: "Windows", icon: "fa6-brands:windows" },
-	],
-	status: [
-		{ label: "正在做", value: "完善这个小站", icon: "material-symbols:construction-rounded" },
-		{ label: "正在学", value: "Astro 与网络服务", icon: "material-symbols:auto-stories-rounded" },
-		{ label: "博客节奏", value: "想清楚了就写", icon: "material-symbols:edit-calendar-rounded" },
-	],
+	profile: {
+		title: "个人档案",
+		facts: [
+			{ label: "出生年份", value: "2002", icon: "material-symbols:calendar-month-rounded" },
+			{ label: "教育经历", value: "深圳大学", icon: "material-symbols:school-rounded" },
+			{ label: "从事行业", value: "电商运营", icon: "material-symbols:business-center-rounded" },
+		],
+	},
 	siteFacts: [
 		{ label: "建站框架", value: "Astro", icon: "material-symbols:rocket-launch-rounded" },
 		{ label: "主题基底", value: "Fuwari", icon: "material-symbols:palette-outline" },

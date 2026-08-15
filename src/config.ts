@@ -73,7 +73,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/gengar_icon_by_chibilyra_d9ilmcm.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "许耿彬",
-	bio: "记录折腾，也收藏生活。",
+	bio: "",
 	links: [
 		{
 			name: "GitHub",
@@ -81,21 +81,29 @@ export const profileConfig: ProfileConfig = {
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://github.com/xgb819",
+			background: "#181717",
+			foreground: "#ffffff",
 		},
 		{
 			name: "QQ",
 			icon: "fa6-brands:qq",
 			url: "https://qm.qq.com/q/wzauDZlIlO",
+			background: "#12b7f5",
+			foreground: "#ffffff",
 		},
 		{
 			name: "Steam",
 			icon: "fa6-brands:steam",
 			url: "https://steamcommunity.com/id/xgb819",
+			background: "#1b2838",
+			foreground: "#ffffff",
 		},
 		{
 			name: "邮箱",
 			icon: "fa6-solid:envelope",
 			url: "mailto:xgb819@gmail.com",
+			background: "#f4511e",
+			foreground: "#ffffff",
 		},
 	],
 };

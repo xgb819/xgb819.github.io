@@ -69,6 +69,8 @@ export type ProfileConfig = {
 		name: string;
 		url: string;
 		icon: string;
+		background?: string;
+		foreground?: string;
 	}[];
 };
 
