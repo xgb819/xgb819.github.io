@@ -5,7 +5,7 @@ export const software = [
         items: [
             {
                 name: "ChatGPT",
-                description: "用来梳理思路，也会拿来辅助写作",
+                description: "主要用来 Vibe Coding 和生成图片",
                 logo: "/images/software/chatgpt.svg",
                 logoBackground: "#ffffff",
                 url: "https://chatgpt.com/",
