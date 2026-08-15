@@ -1,0 +1,62 @@
+---
+import { Icon } from "astro-icon/components";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+---
+
+<MainGridLayout title="说说" description="一些简短的想法与日常。">
+	<div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<div class="flex items-center gap-3 mb-6">
+				<Icon
+					name="material-symbols:chat-bubble-outline-rounded"
+					class="text-3xl text-[var(--primary)]"
+				/>
+				<h2 class="text-2xl font-bold text-[var(--primary)]">说说</h2>
+			</div>
+
+			<div class="moments-empty">
+				<Icon
+					name="material-symbols:chat-bubble-outline-rounded"
+					class="text-4xl text-[var(--primary)] opacity-60"
+				/>
+				<div>
+					<h3>暂时还没有说说</h3>
+					<p>这里会放一些简短的想法与日常。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</MainGridLayout>
+
+<style>
+	.moments-empty {
+		min-height: 12rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		padding: 2rem;
+		border-radius: calc(var(--radius-large) - 0.125rem);
+		background: var(--btn-plain-bg-hover);
+		text-align: left;
+	}
+
+	.moments-empty h3 {
+		margin: 0 0 0.25rem;
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+	.moments-empty p {
+		margin: 0;
+		font-size: 0.875rem;
+		opacity: 0.6;
+	}
+
+	@media (max-width: 640px) {
+		.moments-empty {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+</style>

@@ -4,7 +4,7 @@ export const aboutConfig = {
 		name: "许耿彬",
 		roles: ["数码科技爱好者", "独立博客作者", "INTP-A"],
 		description:
-			"喜欢研究电脑、软件与网络，也喜欢把一个问题追到能说清楚为止。这里记录折腾过程，也收藏生活里值得记住的片段。",
+			"喜欢了解新事物，也享受思考与创造的过程。这里记录折腾过程，也收藏生活里值得记住的片段。",
 	},
 	avatarCredit: {
 		text: "ChibiLyra",

@@ -4,39 +4,81 @@ import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 import { Icon } from "astro-icon/components";
 import EquipmentCard from "@components/misc/EquipmentCard.astro";
+import SoftwareCard from "@components/misc/SoftwareCard.astro";
 import { equipment } from "../config/equipment";
+import { software } from "../config/software";
+import type { MarkdownHeading } from "astro";
+
+const headings: MarkdownHeading[] = [
+    {
+        depth: 1,
+        slug: "硬件",
+        text: "硬件",
+    },
+    ...equipment.map((category) => ({
+        depth: 2,
+        slug: category.category,
+        text: category.category,
+    })),
+    {
+        depth: 1,
+        slug: "软件",
+        text: "软件",
+    },
+    ...software.map((category) => ({
+        depth: 2,
+        slug: category.slug,
+        text: category.category,
+    })),
+];
 ---
 
-<MainGridLayout title={i18n(I18nKey.stack)} description={i18n(I18nKey.stack)}>
+<MainGridLayout title={i18n(I18nKey.stack)} description={i18n(I18nKey.stack)} headings={headings}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full">
             <div class="flex items-center gap-3 mb-6">
                 <Icon name="material-symbols:devices-rounded" class="text-3xl text-[var(--primary)]" />
                 <h2 class="text-2xl font-bold text-[var(--primary)]">工具栈</h2>
             </div>
-            {equipment.map((category) => (
-                <div class="mb-8">
-                    <div class="prose dark:prose-invert prose-base !max-w-none custom-md">
-                        <h2 class="!mt-0 mb-2">
-                            {category.category}
-                        </h2>
-
-                        <p class="mb-6 opacity-75">
-                            {category.description}
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {category.items.map((item) => (
-                            <EquipmentCard
-                                image={item.image}
-                                name={item.name}
-                                specification={item.specification}
-                                url={item.url}
-                            />
-                        ))}
-                    </div>
-                </div>
-            ))}
+            <div class="prose dark:prose-invert prose-base !max-w-none custom-md">
+                <section>
+                    <h1 id="硬件">硬件<a class="anchor" href="#硬件"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h1>
+                    {equipment.map((category) => (
+                        <section>
+                            <h2 id={category.category}>{category.category}<a class="anchor" href={`#${category.category}`}><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2>
+                            <div class="not-prose grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                                {category.items.map((item) => (
+                                    <EquipmentCard
+                                        image={item.image}
+                                        name={item.name}
+                                        specification={item.specification}
+                                        url={item.url}
+                                    />
+                                ))}
+                            </div>
+                        </section>
+                    ))}
+                </section>
+                <section>
+                    <h1 id="软件">软件<a class="anchor" href="#软件"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h1>
+                    {software.map((category) => (
+                        <section>
+                            <h2 id={category.slug}>{category.category}<a class="anchor" href={`#${category.slug}`}><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2>
+                            <div class="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                                {category.items.map((item) => (
+                                    <SoftwareCard
+                                        name={item.name}
+                                        description={item.description}
+                                        logo={item.logo}
+                                        logoBackground={item.logoBackground}
+                                        url={item.url}
+                                    />
+                                ))}
+                            </div>
+                        </section>
+                    ))}
+                </section>
+            </div>
         </div>
     </div>
 </MainGridLayout>

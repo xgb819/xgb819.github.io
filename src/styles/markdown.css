@@ -1,6 +1,26 @@
 .custom-md {
+    counter-reset: markdown-h1;
+
     h1 {
         @apply text-3xl;
+        margin-top: 0.8888889em;
+        counter-increment: markdown-h1;
+
+        &::before {
+            content: counter(markdown-h1);
+            @apply inline-flex items-center justify-center px-2 h-7 min-w-[2rem] rounded-lg text-sm font-bold transition
+                text-[var(--btn-content)] bg-[var(--btn-regular-bg)];
+            margin-right: 0.625rem;
+            vertical-align: 0.375rem;
+        }
+    }
+
+    h2 {
+        margin-top: 1em;
+    }
+
+    h3 {
+        margin-top: 0.6em;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -84,7 +104,7 @@
     }
 
     .expressive-code {
-        @apply my-4;
+        margin-block: 1.25rem;
         ::selection {
             @apply bg-[var(--codeblock-selection)];
         }

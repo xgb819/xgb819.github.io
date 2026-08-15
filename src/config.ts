@@ -42,6 +42,11 @@ export const navBarConfig: NavBarConfig = {
         LinkPreset.Home,
         LinkPreset.Archive,
         {
+            name: "说说",
+            url: "/moments/",
+            external: false,
+        },
+        {
             name: "友链",
             url: "/links/",
             external: false,
@@ -56,16 +61,16 @@ export const navBarConfig: NavBarConfig = {
                     external: false,
                 },
                 {
+                    name: "书影音",
+                    url: "https://www.douban.com/people/xugengbin/",
+                    external: true,
+                },
+                {
                     name: "关于我",
                     url: "/about/",
                     external: false,
                 },
             ],
-        },
-        {
-            name: "开往",
-            url: "https://www.travellings.cn/go.html",
-            external: true,
         },
     ],
 };
