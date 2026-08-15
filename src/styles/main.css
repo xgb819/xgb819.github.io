@@ -1,5 +1,19 @@
 @tailwind components;
 
+img {
+    transition: filter 200ms ease;
+}
+
+html.dark img:not(.no-dark-dim) {
+    filter: brightness(0.9) saturate(1.05);
+}
+
+/* The map already has its own dark-mode treatment. */
+html.dark .amap-stage img,
+html.dark img.no-dark-dim {
+    filter: none;
+}
+
 @layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
