@@ -2,19 +2,19 @@
 const { image, name, specification, url } = Astro.props;
 
 const cardClass =
-    "group block min-w-0 overflow-hidden rounded-lg bg-[var(--btn-plain-bg-hover)] hover:bg-[var(--btn-card-bg-hover)] active:bg-[var(--btn-card-bg-active)] transition-all duration-200";
+    "group block min-w-0 overflow-hidden rounded-lg p-1 -m-1 bg-[var(--btn-plain-bg-hover)] hover:bg-[var(--btn-card-bg-hover)] active:bg-[var(--btn-card-bg-active)] transition-all duration-200";
 ---
 
 {url ? (
     <a
         href={url}
         target="_blank"
-        class={`${cardClass} !no-underline !border-none hover:!no-underline hover:!border-none`}
+        class={`${cardClass} no-styling !no-underline !border-none hover:!no-underline hover:!border-none`}
     >
         <div class="min-w-0 p-5">
             <img 
                 src={image}
-                class="!mx-0 !mt-2 !mb-6 w-full aspect-video object-cover pointer-events-none"
+                class="!mx-0 !mt-2 !mb-6 w-full aspect-video object-contain pointer-events-none"
             />
 
             <h3 title={name} class="!mt-0 !mb-1 truncate font-bold text-base text-90 group-hover:text-[var(--primary)] transition-colors">
@@ -31,7 +31,7 @@ const cardClass =
         <div class="min-w-0 p-5">
             <img 
                 src={image}
-                class="!mx-0 !mt-2 !mb-6 w-full aspect-video object-cover pointer-events-none"
+                class="!mx-0 !mt-2 !mb-6 w-full aspect-video object-contain pointer-events-none"
             />
 
             <h3 title={name} class="!mt-0 !mb-1 truncate font-bold text-base text-90 group-hover:text-[var(--primary)] transition-colors">

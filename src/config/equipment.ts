@@ -10,10 +10,15 @@ export const equipment = [
                 url: "https://www.acer.com.cn/product_list.html?parentid=336"
             },
             {
-                name: "真我 Neo 8",
+                name: "真我 Neo8",
                 specification: "赛博紫 / 16+512GB",
-                image: "/images/equipment/realme-neo-8.png",
+                image: "/images/equipment/realme-neo8.png",
                 url: "https://www.realme.com/cn/realme-neo-8"
+            },
+            {
+                name: "iPhone 14",
+                specification: "午夜色 / 128GB",
+                image: "/images/equipment/iphone-14.png"
             },
             {
                 name: "OPPO Pad 3",
@@ -38,6 +43,16 @@ export const equipment = [
                 specification: "USB Type C",
                 image: "/images/equipment/razer-kishi-v2.png",
                 url: "https://cn.razerzone.com/mobile-controllers/razer-kishi-v2"
+            },
+            {
+                name: "月光宝盒 A5 Pro",
+                specification: "黑色 / 64GB",
+                image: "/images/equipment/moonlight-box-a5-pro.png"
+            },
+            {
+                name: "原道 YD30 平头耳机",
+                specification: "黑色 / 3.5mm",
+                image: "/images/equipment/nicehck-yd30.png"
             }
         ]
     },
