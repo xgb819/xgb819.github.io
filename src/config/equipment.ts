@@ -16,9 +16,10 @@ export const equipment = [
                 url: "https://www.realme.com/cn/realme-neo-8"
             },
             {
-                name: "iPhone 14",
-                specification: "午夜色 / 128GB",
-                image: "/images/equipment/iphone-14.png"
+                name: "iPhone X",
+                specification: "深空灰色 / 256GB",
+                image: "/images/equipment/iphone-x.png",
+                url: "https://support.apple.com/zh-cn/111864"
             },
             {
                 name: "OPPO Pad 3",
