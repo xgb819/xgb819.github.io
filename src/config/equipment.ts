@@ -10,22 +10,16 @@ export const equipment = [
                 url: "https://www.acer.com.cn/product_list.html?parentid=336"
             },
             {
-                name: "真我 Neo8",
-                specification: "赛博紫 / 16+512GB",
-                image: "/images/equipment/realme-neo8.png",
-                url: "https://www.realme.com/cn/realme-neo-8"
+                name: "荣耀 Magic8 Pro Air",
+                specification: "仙紫 / 16+512GB",
+                image: "/images/equipment/honor-magic8-pro-air.png",
+                url: "https://www.honor.com/cn/phones/honor-magic8-pro-air/"
             },
             {
                 name: "iPhone X",
                 specification: "深空灰色 / 256GB",
                 image: "/images/equipment/iphone-x.png",
                 url: "https://support.apple.com/zh-cn/111864"
-            },
-            {
-                name: "OPPO Pad 3",
-                specification: "霞光紫 / 8+256GB",
-                image: "/images/equipment/oppo-pad-3.png",
-                url: "https://www.opposhop.cn/cn/web/products/30899.html"
             },
             {
                 name: "HUAWEI FreeClip 耳夹耳机",
