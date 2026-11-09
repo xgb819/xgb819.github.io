@@ -10,16 +10,22 @@ export const equipment = [
                 url: "https://www.acer.com.cn/product_list.html?parentid=336"
             },
             {
-                name: "荣耀 Magic8 Pro Air",
-                specification: "仙紫 / 16+512GB",
-                image: "/images/equipment/honor-magic8-pro-air.png",
-                url: "https://www.honor.com/cn/phones/honor-magic8-pro-air/"
+                name: "REDMI K90",
+                specification: "浅紫色 / 16+512GB",
+                image: "/images/equipment/redmi-k90.png",
+                url: "https://www.mi.com/prod/redmi-k90"
             },
             {
                 name: "iPhone X",
                 specification: "深空灰色 / 256GB",
                 image: "/images/equipment/iphone-x.png",
                 url: "https://support.apple.com/zh-cn/111864"
+            },
+            {
+                name: "REDMI K Pad",
+                specification: "烟霞紫 / 16+512GB",
+                image: "/images/equipment/redmi-k-pad.png",
+                url: "https://www.mi.com/prod/redmi-kpad"
             },
             {
                 name: "HUAWEI FreeClip 耳夹耳机",
