@@ -16,10 +16,10 @@ export const equipment = [
                 url: "https://www.mi.com/prod/redmi-k90"
             },
             {
-                name: "iPhone X",
-                specification: "深空灰色 / 256GB",
-                image: "/images/equipment/iphone-x.png",
-                url: "https://support.apple.com/zh-cn/111864"
+                name: "iPhone XR",
+                specification: "黑色 / 256GB",
+                image: "/images/equipment/iphone-xr.png",
+                url: "https://support.apple.com/zh-cn/111868"
             },
             {
                 name: "REDMI K Pad",
