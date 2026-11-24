@@ -17,7 +17,7 @@ export const equipment = [
             },
             {
                 name: "iPhone XR",
-                specification: "黑色 / 256GB",
+                specification: "黑色 / 128GB",
                 image: "/images/equipment/iphone-xr.png",
                 url: "https://support.apple.com/zh-cn/111868"
             },
